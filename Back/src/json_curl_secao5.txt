@@ -1,0 +1,88 @@
+{
+  "local": "São Paulo",
+  "dataEvento": "2022-04-22T20:09:37.181Z",
+  "tema": "Angular 11 e suas novidades",
+  "qtdPessoas": 250,
+  "imagemURL": "foto2.png",
+  "telefone": "11965453217",
+  "email": "angularsp@angular.com.br",
+  "lotes": [
+    {
+      "nome": "1º Lote",
+      "preco": 50,
+      "dataInicio": "2022-04-22T20:09:37.181Z",
+      "dataFim": "2022-04-22T20:09:37.181Z",
+      "quantidade": 150
+    },
+    {
+      "nome": "2º Lote",
+      "preco": 89.90,
+      "dataInicio": "2022-04-22T20:09:37.181Z",
+      "dataFim": "2022-04-22T20:09:37.181Z",
+      "quantidade": 100
+    }
+  ],
+  "redesSociais": [
+    {
+      "nome": "facebook",
+      "url": "https://facebook.com/eventoangularsp"
+    }
+  ],
+  "palestrantesEventos": []
+}
+
+
+curl -X POST "https://localhost:5001/api/Eventos" -H  "accept: */*" -H  "Content-Type: application/json-patch+json" -d "{\"local\":\"São Paulo\",\"dataEvento\":\"2022-04-22T20:09:37.181Z\",\"tema\":\"Angular 11 e suas novidades\",\"qtdPessoas\":250,\"imagemURL\":\"foto2.png\",\"telefone\":\"11965453217\",\"email\":\"angularsp@angular.com.br\",\"lotes\":[{\"nome\":\"1º Lote\",\"preco\":50,\"dataInicio\":\"2022-04-22T20:09:37.181Z\",\"dataFim\":\"2022-04-22T20:09:37.181Z\",\"quantidade\":150},{\"nome\":\"2º Lote\",\"preco\":89.9,\"dataInicio\":\"2022-04-22T20:09:37.181Z\",\"dataFim\":\"2022-04-22T20:09:37.181Z\",\"quantidade\":100}],\"redesSociais\":[{\"nome\":\"facebook\",\"url\":\"https://facebook.com/eventoangularsp\"}],\"palestrantesEventos\":[]}"
+
+
+
+{
+  "id": 2,
+  "local": "São Paulo",
+  "dataEvento": "2022-05-06T20:00:00.212",
+  "tema": "Angular 11 e suas novidades",
+  "qtdPessoas": 500,
+  "imagemURL": "foto2.png",
+  "telefone": "11912345678",
+  "email": "angularsp@angular.com.br",
+  "lotes": [
+    {
+      "id": 3,
+      "nome": "1º Lote",
+      "preco": 99.99,
+      "dataInicio": "2022-04-22T20:52:00.212",
+      "dataFim": "2022-04-29T20:52:00.212",
+      "quantidade": 250,
+      "eventoId": 2
+    },
+    {
+      "id": 4,
+      "nome": "2º Lote",
+      "preco": 129.99,
+      "dataInicio": "2022-04-29T20:52:00.212",
+      "dataFim": "2022-05-05T20:52:00.212",
+      "quantidade": 150,
+      "eventoId": 2
+    },
+    {
+      "id": 5,
+      "nome": "3º Lote",
+      "preco": 149.99,
+      "dataInicio": "2022-05-05T20:52:00.212",
+      "dataFim": "2022-05-06T20:52:00.212",
+      "quantidade": 100,
+      "eventoId": 2
+    }
+  ],
+  "redesSociais": [
+    {
+      "id": 2,
+      "nome": "facebook",
+      "url": "https://facebook.com/eventoangularsp",
+      "eventoId": 2,
+      "palestranteId": null,
+      "palestrante": null
+    }
+  ],
+  "palestrantesEventos": null
+}
